@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(53, 71, 99);
+}
+
+h1 {
+    background: linear-gradient(to right, green, yellow);
+    background-clip: text;
+    color: transparent;
+    width: max-content;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    margin:auto;
+}
+
+.kontenerowiec_zbyszka3 {
+    width: fit-content;
+    background-image:url("andrzejtat.png");
+    background-size: auto 100%;
+    border-color: transparent;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, lightgreen, pink) 1;
+    border-image-slice: 1;
+    animation: andrzejWiertlo 4s linear infinite;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.text_zbyszko {
+    animation: textRozpierdol 3s reverse infinite;
+}
+
+
+@keyframes andrzejWiertlo {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 166% 0%;
+    }
+  }
+
+@keyframes textRozpierdol {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: red;
+    }
+}
