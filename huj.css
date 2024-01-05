@@ -1,5 +1,11 @@
 body {
-    background-color: rgb(53, 71, 99);
+    background: url("tlo.gif") rgb(53, 71, 99);
+}
+
+.snieg {
+    width: 100%;
+    height: 100vh;
+    background: url("sniezek.gif");
 }
 
 h1 {
@@ -25,12 +31,24 @@ img {
     border-image-slice: 1;
     animation: andrzejWiertlo 4s linear infinite;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: auto;
+}
+
+.swieta {
+    top: 2%;
+    position:absolute;
 }
 
 .text_zbyszko {
     animation: textRozpierdol 3s reverse infinite;
 }
 
+.gowniana-animacja {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    animation: gownianaAnimacja 3s linear infinite;
+  }
 
 @keyframes andrzejWiertlo {
     0% {
@@ -47,5 +65,14 @@ img {
     }
     50% {
         color: red;
+    }
+}
+
+@keyframes gownianaAnimacja {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-500px);
     }
 }
