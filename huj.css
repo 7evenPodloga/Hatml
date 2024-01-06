@@ -1,5 +1,7 @@
 body {
     background: url("tlo.gif") rgb(53, 71, 99);
+    cursor: url('sigareta.cur'), auto;
+    
 }
 
 .snieg {
@@ -18,7 +20,7 @@ h1 {
 img {
     max-width: 300px;
     height: auto;
-    margin:auto;
+    margin: auto;
 }
 
 .kontenerowiec_zbyszka3 {
@@ -49,6 +51,26 @@ img {
     right: 0;
     animation: gownianaAnimacja 3s linear infinite;
   }
+
+.sniegocisk {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+button {
+    cursor: url('sigaretaC.cur'), auto;
+}
+
+.piwko:hover {
+    cursor: url("ziolo.cur");
+}
+
+.piwko {
+    width: fit-content;
+    background: red;
+    cursor: url("ziolo.cur");
+}
 
 @keyframes andrzejWiertlo {
     0% {
